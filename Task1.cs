@@ -8,13 +8,17 @@ void MaxNumber(int number1, int number2)
 {
     if (number1 > number2)
     {
-        Console.WriteLine("Max = ", number1);
+        Console.WriteLine($"Max = {number1}");
     }
     else
     {
-        Console.WriteLine("Max = ", number2);
+        Console.WriteLine($"Max = {number2}");
     }
 }
 
+Console.WriteLine("Введите первое число: ");
 int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
 int num2 = int.Parse(Console.ReadLine());
+
+MaxNumber(num1, num2);
